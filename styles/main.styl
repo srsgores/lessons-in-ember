@@ -1,0 +1,132 @@
+/*
+	lessons-in-ember
+
+	main.styl.styl
+
+	Author: Sean
+
+	Created on 2014-11-17 by PhpStorm
+*/
+$textColour = white
+$fontPath = "../node_modules/stylus-boilerplate/app/assets/fonts/"
+$iconFontPath = $fontPath + "icomoon/icomoon"
+@require "../node_modules/stylus-boilerplate/app/styles/*"
+
+#intro
+	@extend $text-align-center
+
+body
+	background-image linear-gradient(rgb(134, 190, 57), rgb(19, 220, 4))
+	color $textColour
+
+.will
+	&-appear, &-fade, &-fade-fast, &-fade-slow
+		opacity 0
+	&-fade
+		transition $transitionTime opacity
+
+.do
+	&-appear, &-fade, &-fade-fast, &-fade-slow
+		opacity 1
+strong, b
+	font-weight bold
+details
+	summary
+		cursor pointer
+blockquote
+	font-style italic
+	padding 0 $paddingLarge
+	margin $margin 0
+	border-left 0.5em $borderStyle $primaryColour
+	cite
+		@extend small, $block
+		&:before
+			content "-"
+			font-size 1.3em
+.title
+	margin-bottom 1rem
+	font-size 4em
+
+.profile
+	img
+		border-radius 50%
+		max-width 15em
+		border ($borderWidth * 3) $borderStyle $textColour
+		@extend $normal-margin
+	figcaption
+		@extend $flex
+		justify-content space-between
+		flex-wrap wrap
+		a[href]
+			&:after
+				content: ""
+code
+	font-family font-stack("Courier New")
+
+.slide
+	min-width 50em
+	transition ($transitionTime / 2) $transitionFunction width, min-width
+	box-shadow inset 0 1px 0.1em transparentify($textColour, 0.4)
+	text-shadow 0 1px $inverseTextColour
+	font-smoothing antialiased
+	max-height 92vh
+	+media-query($breakpointMain)
+		min-width 35em
+	background rgba(108, 108, 108, 0.66)
+	header
+		@extend $text-align-center
+		h1, h2, h3, h4, h5, h6
+			margin-bottom 1rem
+		i
+			@extend $block
+			font-size 14rem
+			margin-bottom 1rem
+	@extend $normal-padding
+	@extend $bordered
+	ol
+		list-style decimal
+		ol
+			list-style-type lower-latin
+	ul
+		list-style-type circle
+	ul, ol
+		@extend $normal-padding-left, $normal-margin-bottom
+		font-size 1.5rem
+	p
+		font-size 1.5rem
+	figure
+		@extend $text-align-center
+		img
+			@extend $inline-block
+	a
+		color $textColour
+		font-weight bold
+		text-decoration none
+		@extend $bordered-bottom
+		border-color transparent
+		transition ($transitionTime / 2) $transitionFunction border-color, background
+		&[href]
+			&:after
+				content $icon-link
+				@extend $icomoon, $mini-margin-left
+			&:hover
+				border-color $textColour
+				background transparentize($secondaryColour, 0.4)
+
+.controls
+	@extend $hide-phone
+small
+	font-size 80%
+button
+	font-family $baseFontFamily
+	box-shadow inset 0 1px transparentify($textColour, 0.45)
+	border-color $primaryColour - 40
+	@extend $bordered
+	background $primaryColour
+	&:hover, &:focus
+		background $primaryColour - 15
+		border-color $primaryColour - 50
+	color $textColour
+	transition all $transitionFunction $transitionTime
+	i
+		@extend $mini-margin-left

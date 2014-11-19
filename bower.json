@@ -1,0 +1,28 @@
+{
+  "name": "lessons-in-ember",
+  "version": "1.0.0",
+  "authors": [
+    "Sean <seangores@gmail.com>"
+  ],
+  "description": "Presentation for YYCJS on learning emberjs",
+  "main": "index.html",
+  "keywords": [
+    "presentation",
+    "slides",
+    "tutorial"
+  ],
+  "license": "DWTFYW",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jmpress": "*",
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.3",
+    "jquery-migrate": "~1.2.1"
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://C:/Program Files (x86)/Ampps/www/axiom_dev/apps/smartweb2/includes/mainContent.php" charset="UTF-8" />
+    <file url="file://C:/Program Files (x86)/Ampps/www/axiom_dev/components/intranet/com_smart_web/api/v1/AxiomAPI.class.php" charset="UTF-8" />
+    <file url="file://C:/Program Files (x86)/Ampps/www/axiom_dev/components/intranet/com_smart_web/api/v1/api.php" charset="UTF-8" />
+    <file url="file://C:/Program Files (x86)/Ampps/www/axiom_dev/components/intranet/com_smart_web/pages/siteForm.php" charset="UTF-8" />
+    <file url="file://C:/Program Files (x86)/Ampps/www/axiom_dev/components/intranet/com_smart_web/smart_web.php" charset="UTF-8" />
+    <file url="file://C:/Program Files (x86)/Ampps/www/axiom_dev/lib/ConsumerSiteConfiguration/ConsumerSiteConfiguration.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/index.jade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/layout.jade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/stylus-boilerplate/node_modules/kouto-swiss/_docs/_pages/index.jade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/main.coffee" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/styles/main.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../seangoresht/app/routes/manage-posts/edit.coffee" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../seangoresht/app/templates/components/form-actions.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/components/animations/index.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/components/callouts.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/components/dropdown.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/components/grid.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/components/icons.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/helpers/helpers.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/helpers/kouto-config.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/helpers/variables.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/layout/forms.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/layout/layout.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/layout/tables.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/layout/type.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/app/styles/stylus-boilerplate.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../stylus-boilerplate/readme.md" charset="UTF-8" />
+  </component>
+</project>

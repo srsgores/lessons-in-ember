@@ -1,0 +1,304 @@
+//
+	Lessons in Ember
+
+	@author: Sean Goresht
+	@www: seangoresht.com
+	@copyright: COPYRIGHT Tue Nov 04 2014 10:41:19 GMT-0700 (Mountain Standard Time) DWTFYW License
+	@license: DWTFYW License
+
+	Filename: index.jade
+
+	This file is the entry point for the Lessons in Ember slides
+
+extends layout
+
+block content
+	nav.controls
+		button.previous-slide(title="Previous Slide")
+			i.icon-arrow-left
+		button.next-slide(title="Next slide")
+			i.icon-arrow-right
+	article.slides
+		section.slide.step.toggle-controls#intro(data-x = "0", data-y = "0", data-z = "0", data-rotate = "0")
+			header(data-jmpress = "fade after 1s step")
+				h1.title Intro to
+					a(href="emberjs.com", title="EmberJS") EmberJS
+					h2.subtitle 8 Lessons in Ember
+				h4 by&nbsp;
+					a(href = "http://seangoresht.com", target = "_sean_website", title = "Visit my Website") Sean Goresht
+			p(data-jmpress = "fade after 1s prev") Things I wish I knew when I started learning
+			footer(data-jmpress = "fade after 1s p")
+				button.next-slide(title = "Learn Now") Learn
+					i.icon-arrow-right
+				div(role = "alert")
+					small (Use your arrow keys or swipe to navigate the slides)
+		section.slide.step.toggle-controls#overview(data-x = "1500", data-y = "0", data-z = "50", data-rotate = "0")
+			h1(data-jmpress = "fade after 1s step") Overview
+			ol
+				li(data-jmpress = "fade") What is EmberJS?
+				ol
+					li(data-jmpress = "fade")
+						a(href="#your-framework-option") EmberJS, vs. other libraries
+					li(data-jmpress = "fade")
+						a(href="#when-to-use-ember") When to use EmberJS
+					li(data-jmpress = "fade") Architecture, structuring an application
+					ol
+						li(data-jmpress = "fade") Routes
+						li(data-jmpress = "fade") Models
+						li(data-jmpress = "fade") Controllers
+						li(data-jmpress = "fade") Components
+				li(data-jmpress = "fade")
+					a(href="#tips-for-new-emberjs-users") 8 Lessons Learned
+				li(data-jmpress = "fade")
+					a(href="#questions") Questions
+		section.slide.step#about-me(data-x = "4500", data-y = "0", data-z = "-2500", data-rotate = "0")
+			header
+				h1(data-jmpress = "fade after 1s step") About Me
+			figure.profile(data-jmpress = "fade after 1s prev")
+				img(src="https://lh5.googleusercontent.com/-kOmYFQ7FQeY/UcPOUZGvv0I/AAAAAAAFRys/a8mBfc0q_tQ/s799-no/977524_10200471144073437_1538457960_o.jpg", alt="Me")
+				figcaption
+					a(href="//twitter.com/SGoresht") Twitter&nbsp;
+						i.icon-twitter
+					a(href="https://github.com/srsgores") GitHub&nbsp;
+						i.icon-github
+					a(href="mailto:seangores@gmail.com") Email&nbsp;
+						i.icon-mail
+		section.slide.step#disclaimer(data-x = "4500", data-y = "0", data-z = "1500", data-rotate = "0")
+			header
+				h1(data-jmpress = "fade after 1s step") Disclaimer
+				i.icon-warning2
+		section.slide.step#the-problem(data-x = "4500", data-y = "6000", data-z = "0", data-rotate = "60")
+			header
+				h1(data-jmpress = "fade after 1s step") The Problem
+			ul(data-jmpress = "fade after 1s prev")
+				li(data-jmpress="fade")
+					em 'Divitus'
+				li(data-jmpress="fade")
+					em 'Classitus'
+				li(data-jmpress="fade") Heavier AJAX-based apps, more client-focused
+				li(data-jmpress="fade") Lack of structure
+				li(data-jmpress="fade") Abundance of frameworks
+		section.slide.step#new-project(data-x = "-2000", data-y = "2000", data-z = "0", data-rotate = "0")
+			header
+				h1(data-jmpress = "fade after 1s step") So You're Starting a New Project
+				i.icon-file3(data-jmpress = "fade after 1s prev")
+			section.slide.step#your-framework-option(data-x = "1400", data-y = "0", data-z = "0", data-rotate = "0")
+				header
+					h1(data-jmpress = "fade after 1s step") Your Options
+				ul(data-jmpress = "fade after 1s prev")
+					li(data-jmpress="fade")
+						a(href="http://jquery.com/", target="_blank") jQuery
+					li(data-jmpress="fade")
+						a(href="https://angularjs.org/", target="_blank") AngularJS
+					li(data-jmpress="fade")
+						a(href="http://backbonejs.org/", target="_blank") Backbone
+					li(data-jmpress="fade")
+						a(href="http://facebook.github.io/react/", target="_blank") ReactJS (+ Flux)
+					li(data-jmpress="fade")
+						a(href="http://canjs.com/", target="_blank") CanJS
+					li(data-jmpress="fade")
+						a(href="http://knockoutjs.com/", target="_blank") Knockout
+					li(data-jmpress="fade")
+						a(href="http://montagestudio.com/montagejs/", target="_blank") MontageJS
+					li(data-jmpress="fade")
+						a(href="https://www.polymer-project.org/", target="_blank") Polymer
+					li(data-jmpress="fade")
+						a(href="http://emberjs.com/", target="_blank") EmberJS
+		section.slide.step#introducing-emberjs(data-x = "500", data-y = "2000", data-z = "0", data-rotate = "0")
+			header
+				h1(data-jmpress = "fade after 1s prev") Introducing EmberJS
+			figure(data-jmpress="fade")
+				img(src="http://www.gravatar.com/avatar/0cf15665a9146ba852bf042b0652780a?s=500")
+				figcaption The Ember logo
+			p(data-jmpress = "fade after 1s prev")
+				a(href="http://emberjs.com" target="emberjs") Emberjs is a
+					strong high-level&nbsp;
+					| javascript library for "ambitious applications"
+			blockquote(data-jmpress="fade")
+				quote EmberJS is a framework for ambitious applications
+				cite The&nbsp;
+					a(href="emberjs.com") EmberJS website
+		section.slide.step#when-to-use-ember(data-x = "1500", data-y = "2000", data-z = "0", data-rotate = "0")
+			header
+				h1(data-jmpress = "fade after 1s step") When to Use Ember?
+			p(data-jmpress = "fade after 1s prev") Content-heavy applications:
+			ul(data-jmpress = "fade")
+				li Client-heavy applications: ex. job boards, forums, time tracking software, real-time data visualization, dashboards
+				li Blogs
+				li E-Commerce Sites
+				li CMS
+			p(data-jmpress="fade")
+				strong Don't use ember if you're building a:
+			ul(data-jmpress="fade")
+				li Game
+				li Traditional website
+				li (an) upgrade to an existing website
+				li Complex server-side application (comparing data)
+			footer(data-jmpress="fade")
+				p
+					strong In general:
+				blockquote
+					q "Do it any other way, or go
+						em all&nbsp;
+						| the ember way
+		section.slide.step#the-ember-architecture(data-x = "1500", data-y = "3000", data-z = "0", data-rotate = "0")
+					header
+						h1(data-jmpress = "fade") EmberJS is MVC
+					figure(data-jmpress = "fade after 1s prev")
+						img(src="http://www.smashingmagazine.com/wp-content/uploads/2013/09/ember-sketch.png", alt="Model-view-controller diagram")
+						figcaption EmberJS is dubbed "MVC"
+				section.slide.step#components-of-ember(data-x = "3000", data-y = "2000", data-z = "0", data-rotate = "0")
+					header
+						h1(data-jmpress = "fade") What Makes Ember
+					ul(data-jmpress = "fade after 1s prev")
+						li(data-jmpress = "fade")
+							a(href="http://talks.erikbryn.com/backburner.js-and-the-ember-run-loop/#/", target="ember-run-loop") Ember (core) RunLoop
+								sup (Backburner JS)
+						li(data-jmpress = "fade") Router
+						li(data-jmpress = "fade") Handlebars
+							sup (soon to be
+								em
+									a(href="http://mmun.s3.amazonaws.com/slides/htmlbars-anatomy.pdf") HTMLBars
+								|)
+						li(data-jmpress = "fade") View Layer (engine)
+							ul
+								li
+									sup *
+									| jQuery
+						li(data-jmpress = "fade") Model Layer
+						li(data-jmpress = "fade") Build tools
+							ul
+								li Bower
+								li Brocoli
+								li ES6 resolver
+				section.slide.step#a-sample-ember-app(data-x = "4000", data-y = "2000", data-z = "0", data-rotate = "0")
+					header
+						h1(data-jmpress = "fade after 1s step") A Sample Ember App
+					a(data-jmpress = "fade", href="http://emberjs.com/", target="_blank") View the sample app on the official emberjs website
+
+				section.slide.step#tips-for-new-emberjs-users(data-x = "4000", data-y = "0", data-z = "3500", data-rotate = "0")
+					header
+						h1(data-jmpress = "fade after 1s step") 8 Useful Ember Tips I wish I'd Known
+						i.icon-ticket
+					section.slide.step#limit-api-use(data-x = "0", data-y = "1500", data-z = "0", data-rotate = "0")
+						header
+							h1(data-jmpress = "fade after 1s step") Documentation is for Pussies
+						ul(data-jmpress = "fade after 1s prev")
+							li(data-jmpress = "fade") If you have to look it up,
+								strong you're probably doing it wrong
+								ul
+									li
+										strong Don't&nbsp;
+										| access a parent controller's property from a component
+									li
+										strong Don't&nbsp;
+										| perform a transition from a component's controller
+							li(data-jmpress = "fade") As a general rule, if it was easy,&nbsp;
+								strong you did it right
+					section.slide.step#sharing-can-be-easier(data-x = "0", data-y = "2500", data-z = "0", data-rotate = "0", style="overflow-y:scroll;")
+						header
+							h1(data-jmpress = "fade after 1s step") Sharing Can Be Easier
+						ul(data-jmpress = "fade after 1s prev")
+							li You should probably not use&nbsp;
+								code needs: []
+							li instead, put all shared logic in the implicitly-shared controllers: ex.&nbsp;
+								code index
+								| or&nbsp;
+								code ApplicationController
+						figure
+							img(src="http://samhuri.net/f/ember-structure.png", alt="Controller Dependencies", style="max-width: 70%;")
+							figcaption Emberjs controllers, and how dependencies can be shared
+						p
+							a(href="http://stackoverflow.com/questions/14760856/ember-js-data-binding-between-controllers", target="data-binding-controllers") More on stackoverflow
+					section.slide.step#bubbling-up-actions(data-x = "0", data-y = "3500", data-z = "0", data-rotate = "0")
+						header
+							h1(data-jmpress = "fade after 1s step") Bubbling up Actions
+						p(data-jmpress = "fade") 4 Simple steps...
+						ol
+							li(data-jmpress="fade") Wire up action normally under actions hash
+							li(data-jmpress="fade") Put in&nbsp;
+								code @sendAction("{passedInAction}")
+							li(data-jmpress="fade") Pass in the action, to the component (hbs) – make sure to include quotes!
+							li(data-jmpress="fade") Code in the actions hash of your controller
+						a(href="http://jsfiddle.net/NQKvy/1492/", target="managing-action-bubbling", data-jmpress="fade") Demo - EmberJS fiddle
+					section.slide.step#admin-routing-authentication(data-x = "0", data-y = "4500", data-z = "0", data-rotate = "0")
+						header
+							h1(data-jmpress = "fade after 1s step") Authenticated Routes
+						p(data-jmpress = "fade after 1s prev") All you need to do is use&nbsp;
+							code beforeModel: function(){}
+						a(data-jmpress="fade", href="https://gist.github.com/srsgores/19a55df1398be0d1c896", title="Authenticated Route gist") Authenticated Route Gist
+					section.slide.step#route-resource(data-x = "0", data-y = "5500", data-z = "0", data-rotate = "0")
+						header
+							h1(data-jmpress = "fade after 1s step") @route() vs. @resource()
+						ul
+							li(data-jmpress="fade")
+								code @resource&nbsp;
+								| was depreciated in 1.7+
+							li(data-jmpress="fade") difference:
+								code @route&nbsp;
+								| preserves scope;
+								code @resource&nbsp;
+								| 'resets' scope
+					section.slide.step#keeping-components-dumb(data-x = "0", data-y = "6500", data-z = "0", data-rotate = "0")
+						header
+							h1(data-jmpress = "fade after 1s step") Keeping Components Dumb
+						p(data-jmpress = "fade after 1s prev") Ask yourself these three questions:
+						ol
+							li(data-jmpress="fade") Are components as “dumb” as possible?  Are they read-only, and encapsulated?
+							li(data-jmpress="fade") Have you created more than 1 route for a given functionality?  If so, have you grouped them together, using template partials?
+							li(data-jmpress="fade") Are shared functionalities and properties created under shared controllers and routes?  For example, application controller and application route.  (See checking for admin access)
+					section.slide.step#engaging-the-community(data-x = "0", data-y = "7500", data-z = "0", data-rotate = "0")
+						header
+							h1(data-jmpress = "fade after 1s step") Engaging the Community
+						ol(data-jmpress = "fade after 1s prev")
+							li(data-jmpress = "fade") Follow emberjs on twitter
+							li(data-jmpress = "fade")
+								a(href="http://webchat.freenode.net/", target="_ember-irc", title="Join the Emberjs IRC") Join the IRC:
+									abbr(title="emerjs chat room on freeNode IRC") #emberjs
+							li(data-jmpress = "fade") Post on
+								a(href="http://stackoverflow.com/questions/tagged/ember.js") stackoverflow
+								| and
+								a(href="http://discuss.emberjs.com/") Ember Discuss
+							li(data-jmpress = "fade") Surround yourself with ember people (hard), or check out services like codementor
+							li(data-jmpress = "fade") Find yourself an ember guru
+					section.slide.step#working-with-ember-data(data-x = "0", data-y = "8500", data-z = "0", data-rotate = "0")
+						header
+							h1(data-jmpress = "fade after 1s step") Working with Ember Data
+						ul
+							li(data-jmpress="fade")
+								strong Ember Data is tricky!
+							li(data-jmpress="fade") Be prepared to look at source code
+							li(data-jmpress="fade") Must have access to API specification
+							li(data-jmpress="fade") Be prepared to write serializers (either way!)
+							li(data-jmpress="fade") Embedded records: natively work, but with caveats
+							li(data-jmpress="fade") In general: ember data works, but use at your own risk
+
+					section.slide.step#useful-links(data-x = "0", data-y = "8500", data-z = "4000", data-rotate = "0")
+						header
+							h1(data-jmpress = "fade after 1s step") Useful Ember Links
+						ul(data-jmpress = "fade")
+							li
+								a(href="https://github.com/stars/srsgores?q=ember", title="See all worth Emberjs repos I've starred") All my stars on GitHub
+							li
+								a(href="http://emberweekly.com/") Ember Weekly newsletter
+							li
+								a(href="http://torontoemberjs.com/slides/ember1.0") Guide to upcoming ember 1.0 release
+							li
+								a(href="http://torontoemberjs.com/", title="EmberJS Toronto") Toronto EmberJS meetups (with great links and videos)
+							li
+								a(href="https://speakerdeck.com/elucid/ember-errors-and-you", title="Managing EmberJS Errors") Managing ember errors
+							li
+								a(href="https://www.youtube.com/user/EmberNYC") EmberNYC on YouTube
+							li
+								a(href="https://www.youtube.com/channel/UCp_L_YjmXTKR4Q2fg1XahsA") Boston Ember talks on YouTube
+							li
+								a(href="https://www.youtube.com/channel/UC7Xy2-x3--7FwBbZuingNVw") EmberFest talks on YouTube
+							li
+								a(href="https://www.youtube.com/user/EmberSherpa") Ember Sherpa video tutorials on YouTube
+							li
+								a(href="http://ember101.com/") Ember '101' tutorial videos
+
+		section.slide.step#questions(data-x = "0", data-y = "6000", data-z = "5000", data-rotate = "0")
+					header
+						h1(data-jmpress = "fade after 1s step") Questions?
+						i.icon-question(data-jmpress="fade after 1s prev")

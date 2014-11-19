@@ -1,0 +1,21 @@
+{
+  "name": "lessons-in-ember",
+  "description": "What I learned from 4 months of emberjs",
+  "author": {
+    "name": "Sean Goresht",
+    "email": "seangores@gmail.com",
+    "url": "seangoresht.com"
+  },
+  "licenses": [
+    {
+      "type": "DWTFYW License"
+    }
+  ],
+  "repository": "",
+  "readme": "What I learned from 4 months of emberjs",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "stylus-boilerplate": "0.2.0"
+  }
+}
